@@ -52,5 +52,6 @@ class PersonSchema(ma.SQLAlchemyAutoSchema):
 
 
 note_schema = NoteSchema()
+notes_schema = NoteSchema(many=True)
 person_schema = PersonSchema()
 people_schema = PersonSchema(many=True)
